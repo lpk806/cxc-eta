@@ -21,7 +21,6 @@ const BusList = () => {
     
     return busList.length ?( 
         <div className="container">
-            {/* <div onClick={refreshBus}>refresh</div> */}
            
                 {busList.map(bus => {
                     return (<BusDetail bus={bus} key={bus.route}></BusDetail>)
@@ -30,7 +29,6 @@ const BusList = () => {
         </div>
      ):(
         <div className="container">
-                <div onClick={refreshBus}>refresh</div>
          <div>沒有服務</div>    
          <div>Not in Service</div>
          </div>
